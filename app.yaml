@@ -1,0 +1,11 @@
+runtime: go
+env: flex
+service: service-livetraffic
+
+env_variables:
+  POSTGRES_CONNECTION: "user=utplivedata password=abcd1234 dbname=utp host=/cloudsql/utp-md:europe-west1:utp-database"
+  
+beta_settings:
+  cloud_sql_instances: utp-md:europe-west1:utp-database
+  
+
